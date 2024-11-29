@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:17.2
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: end_pos
+      POSTGRES_PASSWORD: "ec504a3115264b6058bdeedb7e7eefd5"
+    volumes:
+      - end_pos_volumes:/var/lib/postgresql/data
+volumes:
+  end_pos_volumes:
