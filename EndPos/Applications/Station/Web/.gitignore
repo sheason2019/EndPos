@@ -1,13 +1,7 @@
-# Local
+.env
+!.env.example
 .DS_Store
-*.local
-*.log*
-
-# Dist
+.react-router
+build
 node_modules
-dist/
-
-# IDE
-.vscode/*
-!.vscode/extensions.json
-.idea
+*.tsbuildinfo
